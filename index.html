@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adventure Machine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <div id="lnpad">
+  <div id="pads" class="module">
+
+
+
+ <div id="fx" data-key="65" data-color="#00c253" class="key">  <kbd>A</kbd>
+      <span class="sound"></span></div>
+       <div id="fx" data-key="90" data-color="#00c253" class="key">  <kbd>Z</kbd>
+      <span class="sound"></span></div>
+       <div id="fx" data-key="69" data-color="#00c253" class="key">  <kbd>E</kbd>
+      <span class="sound"></span></div>
+       <div id="fx" data-key="82" data-color="#00c253" class="key">  <kbd>R</kbd>
+      <span class="sound"></span></div>
+       <div id="fx" data-key="84" data-color="#00c253" class="key">  <kbd>T</kbd>
+      <span class="sound"></span></div>
+       <div id="fx" data-key="81" data-color="#00c253" class="key">  <kbd>Q</kbd>
+      <span class="sound"></span></div>
+       <div id="fx" data-key="83" data-color="#00c253" class="key">  <kbd>S</kbd>
+      <span class="sound"></span></div>
+       <div id="fx" data-key="68" data-color="#00c253" class="key">  <kbd>D</kbd>
+      <span class="sound"></span></div>
+       <div id="fx" data-key="70" data-color="#00c253" class="key">  <kbd>F</kbd>
+      <span class="sound"></span></div>
+       <div id="fx" data-key="71" data-color="#00c253" class="key">  <kbd>G</kbd>
+      <span class="sound"></span></div> 
+
+<!-- NUMBER -->
+
+    <div id="kick1" data-key="96" data-color="#ff0011" class="key">    <kbd>0</kbd>
+      <span class="sound"></span></div>
+    <div  data-key="97" data-color="#ffda24" class="key">   <kbd>1</kbd>
+      <span class="sound"></span> </div>
+    <div id="kick3" data-key="98" data-color="#00c253" class="key">   <kbd>2</kbd>
+      <span class="sound"></span> </div>
+    <div id="clap1" data-key="99" data-color="#ffda24" class="key">    <kbd>3</kbd>
+      <span class="sound"></span></div>
+    <div id="clap2" data-key="100" data-color="#00c353" class="key">  <kbd>4</kbd>
+      <span class="sound"></span></div>
+    <div id="clap3" data-key="101" data-color="#ffda24" class="key">  <kbd>5</kbd>
+      <span class="sound"></span></divpad    <div id="bass1" data-key="102" data-color="#ffda24" class="pad"> </div>
+    <div id="bass2" data-key="102" data-color="#00c353" class="key"> <kbd>6</kbd>
+      <span class="sound"></span> </div>
+    <div id="hoover1" data-key="103" data-color="#00c353" class="key"> <kbd>7</kbd>
+      <span class="sound"></span> </div>
+    <div id="fx" data-key="104" data-color="#00c253" class="key">  <kbd>8</kbd>
+      <span class="sound"></span></div>
+
+ <div id="fx" data-key="105" data-color="#00c253" class="key">  <kbd>9</kbd>
+      <span class="sound"></span></div>
+      
+
+<!-- SOUUUUUUUUUUUUUUUND -->
+ <audio data-key="68" src="sounds/t4.wav" class="key">></audio>
+  <audio data-key="70" src="sounds/t5.wav" class="key">></audio>
+ <audio data-key="81" src="sounds/t3.wav" class="key">></audio>
+   <audio data-key="82" src="sounds/h.wav" class="key">></audio>
+  <audio data-key="83" src="sounds/t4.wav" class="key">></audio>
+ <audio data-key="84" src="sounds/t1.wav" class="key">></audio>
+  <audio data-key="71" src="sounds/t2.wav" class="key">></audio>
+  <audio data-key="65" src="sounds/s4.wav" class="key">></audio>
+  <audio data-key="90" src="sounds/fd2.wav" class="key">></audio>
+  <audio data-key="69" src="sounds/s5.wav" class="key">></audio>
+  <audio data-key="96" src="sounds/b1.wav" class="key">></audio>
+  <audio data-key="97" src="sounds/r1.wav" class="key"> ></audio>
+  <audio data-key="98" src="sounds/b3.wav" class="key">></audio>
+  <audio data-key="99" src="sounds/dx1.wav" class="key">></audio>
+  <audio data-key="100" src="sounds/dx2.wav" class="key">></audio>
+  <audio data-key="101" src="sounds/d3.wav" class="key">></audio>
+  <audio data-key="102" src="sounds/v1.wav" class="key">></audio>
+  <audio data-key="103" src="sounds/v2.wav" class="key">></audio>
+  <audio data-key="104" src="sounds/v3.wav" class="key">></audio>
+    <audio data-key="105" src="sounds/g1.wav" class="key">></audio>
+
+  </div>
+  <div class="right_cont">
+    <div class="circle_wrap">
+      <div class="circle">
+      </div>
+      <span>T</span>
+    </div>
+    <div class="circle_wrap">
+      <div class="circle">
+      </div>
+      <span>A</span>
+    </div>
+    <div class="circle_wrap">
+      <div class="circle">
+      </div>
+      <span>I</span>
+    </div>
+    <div class="circle_wrap">
+      <div class="circle">
+      </div>
+      <span>E</span>
+    </div>
+    <div class="circle_wrap">
+      <div class="circle">
+      </div>
+      <span>B</span>
+    </div>
+  </div>
+  <div class="top_cont">
+  </div>
+
+<!-- 
+<script>
+window.addEventListener('keydown', function (e){
+console.log(e.keyCode);
+const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+// console.log(audio);
+// console.log(e)
+if(!audio) return;//STOP
+audio.currentTime=0; //Replay :D
+// console.log(key);
+audio.play();
+key.classList.add('playing');
+
+});
+
+function removeTransition(e){
+ 
+ if (e.propertyName !== 'transform') return;
+    this.classList.remove('playing');
+     console.log(e.propertyName)
+  }
+
+
+const keys = document.querySelectorAll('.key');
+keys.forEach(key => key.addEventListener('transitionend',removeTransition));
+</script> -->
+<script type="text/javascript" src="taieb.js"></script>
+  <img class="dp_logo" src="http://i.imgur.com/nmovPht.png?dl=0"/>
+  <img class="lunchpad_logo" src="http://i.imgur.com/YHd9d0S.gif"/>
+</div>
+<img class="taieb_logo" src="http://i.imgur.com/IdFCHJU.png?dl=0"/>
+</body>

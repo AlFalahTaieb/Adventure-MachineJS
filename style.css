@@ -1,0 +1,142 @@
+
+* {
+   -moz-box-sizing:border-box;
+   -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+body {
+ -webkit-animation: random 15s infinite;
+      animation: random 15s infinite;
+  background-color:#8e2a8b;
+  color:#ef58a0;
+  font-family:Arial,sans-serif;
+  font-size:16px;
+  text-align:center;
+
+}
+
+@keyframes  random {
+    15% { background-color: #E843FF; } 
+    30% { background-color: #71E8E2; } 
+    45% { background-color: #FFF6A8; } 
+    60% { background-color: #E8A4A5; }
+    75% { background-color: #65A5FF; }  
+}
+
+body h4 {
+  color:#fde74e;
+}
+
+#lnpad {
+  float: left;
+  height: 455px;
+  width: 505px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -207px;
+  margin-left: -252px;
+}
+.circle_wrap {
+  position: relative;
+  margin-top: 35px;
+
+}
+.circle_wrap span {
+  position: absolute;
+  right: 8px;
+  top: 15px;
+  font-size: 13px;
+  color: #fde74e;
+}
+.dp_logo{
+  position: absolute;
+  bottom: -25px;
+  width: 110px;
+  left: -5px;
+}
+.right_cont {
+  width: 70px;
+  height: 500px;
+  position: absolute;
+  right: 11px;
+}
+.circle {
+  border-radius: 60%;
+	width: 45px;
+	height: 45px;
+  background: #7D7E88;
+
+}
+
+.taieb_logo {
+  position: absolute;
+  bottom: -3px;
+  top:0px;
+  width: 200px;
+  left: 212px;
+}
+#pads {
+  position:absolute;
+  width:500px;
+  height: 470px;
+}
+.module {
+
+  background-color:#61636d;
+  -moz-border-radius:.5em;
+  -webkit-border-radius:.5em;
+  -o-border-radius:.5em;
+  border-radius:.5em;
+  padding:1.25em .9375em;
+}
+.key {
+  background-color:#bbb;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  -o-border-radius:5px;
+  border-radius:5px;
+  cursor:pointer;
+  float:left;
+  width: 70px;
+  height: 70px;
+  margin:.3125em;
+
+  transition: all 1.07s;
+
+  color: white;
+
+  text-shadow: 0 0 .5rem black;
+
+}.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
+.taieb_logo {
+  position:absolute;
+  width:100px;
+  left:10px;
+}
+
+.lunchpad_logo {
+  position: absolute;
+  bottom: -35px;
+  width: 150px;
+  height: 150px;
+  left: 302px;
+}
+
